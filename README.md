@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Relax Inn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Agreement
 
-## Available Scripts
+### Team members
 
-In the project directory, you can run:
+* Moayad Alhaj (Team Leader)
+* Tahany Ali
+* Mohammad Silwadi
 
-### `npm start`
+### Cooperation Plan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* **Moayyad:** Strong abilities rely on Javascript and CSS content especially Backend. He will contribute in achieving all the team’s vision.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* **Mohammad:** will offer help to all team members whenever they get stuck, he will directly demonstrate through research skills all the abilities to help different team members in JavaScript.
 
-### `npm test`
+* **Tahany:** will be the project coordinator. He will assign all the responsibilities of the group members, while also containing all the work assets of the group in Frontend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Conflict Plan
 
-### `npm run build`
+As a team we will maintain the relations between us as much as possible by create branchse of our work for each member and we will push our work to the repo. So, the team leader will allow to merge our work.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Communication Plan
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**As a team, we discussed the time that we want to work in, and this will be the as following:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* In the class time, we will attend the breakout room and try in this time to work as we can.
+* After the class time, we will have a break so that we can refresh ourselves and come back again with an energized soul that wants to make progress. We picked a three hours break then we will go back to work again.
+* Friday we will discuss the tasks and manage them by assigning member to the tasks in trello
+* Saturday every member will work on his task and we will meet to discusse and see how the work done and collaberte to solve any problems
+* Sunday and Monday will hold extra working hours.
+* On Tuesday we will try as much as we can to finish all the work that we have. In case of any failure we will have Tuesday as an extra day to finish all the required tasks.
 
-### `npm run eject`
+We will ensure that everyone will share in this project and every voice will be heard, an as a Team-Leader I will ensure that everyone will take his piece of this work, and I will ensure to break the ice between the team members so that it turn from technical and work environment to a fun and enjoyable time.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Work Plan
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As a team we all agreed on the project idea, so that we all have the passion to do this project and we define the basic shape for our project, define the features and the head point of this project. We broke the ice between the team members and talked freely about the weakness and strength points in the coding. So, we assigned the tasks fearfully and everyone was satisfied with his taks and his piece of the work.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We will use the management tools that are available outside as GitHub projects and trello, we also define our progress plan and define some milestones that work as indicators that we are making progress in this project.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Git Process
 
-## Learn More
+As a Git platform, we will use it as much as we can, it is a good friend for us, to monitor the versions of our files in the projects, make remote collaboration something really good and effective.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For this manner, we will do the following procedure:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Every team member will work on his task, after we finish we will do the PR one by one, and the Team-Leader will do the merge after he ensures there are no conflicts in the files.
+* Every team member will work individually on each page, so it can be easier to implement on the main branch.
+* Next day every team member will do the pull request in the morning for the main branch and do their tasks and so on.
 
-### Code Splitting
+This collaborative work will be done by making an organization in the GitHub that has all the team members, in this organization we will have the project repository and on this repository we will do the above procedure.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-------------------------------------------------------
 
-### Analyzing the Bundle Size
+## User Story
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* AS a user, I would like to find hotels related to searched location
+* AS a user, I would like to see type of rooms for a specific hotel
+* AS a user, I would like to see the reviews and rate of the hotel
+* AS a user, I would like to make a reservation

@@ -43,7 +43,7 @@ export class Header extends Component {
                       <Logout /> :
                       <Login />
                   }
-                  Log In
+                 
                 </Button>
               </Nav>
             </Navbar.Collapse>

@@ -11,13 +11,14 @@ import {
   FormControl,
 } from "react-bootstrap";
 import "./Header.css";
+
 export class Header extends Component {
   render() {
     return (
       <div>
         <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
           <Container>
-            <Navbar.Brand href="#"> <img src={logo} alt=""style={{width: '120px', height: '50px'}}/></Navbar.Brand>
+            <Navbar.Brand href="#"> <img src={logo} alt="" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -25,8 +26,9 @@ export class Header extends Component {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
+                <Nav.Link to="/">Home</Nav.Link>
+                <Nav.Link to="/AboutUs">About Us</Nav.Link>
+                <Nav.Link to="/Hotels">Hotels</Nav.Link>
               </Nav>
               <Nav className="form-part">
                 <Form className="d-flex">
@@ -37,16 +39,16 @@ export class Header extends Component {
                     aria-label="Search"
                   />
                 </Form>
-                  {
-                    this.props.auth0.isAuthenticated ?
-                      <Logout /> :
-                      <Login />
-                  }
+                {
+                  this.props.auth0.isAuthenticated ?
+                    <Logout /> :
+                    <Login />
+                }
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </div>
+      </div >
     );
   }
 }

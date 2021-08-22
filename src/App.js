@@ -4,7 +4,6 @@ import AboutUs from './components/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import data from'./component/data/data.json';
 import { withAuth0 } from '@auth0/auth0-react';
 import {
   BrowserRouter as Router,
@@ -14,34 +13,24 @@ import {
 import './App.css';
 
 export class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      hotalList: data,
-    }
-  }
   render() {
     return (
       <div className="App">
         <Header /> 
-        <Home />
-        <Router>
+          <Router>
           <Switch>
-            <Route path="/about">
-              <AboutUs />
-            </Route>
-            <Route path="/contact-us">
-              <ContactUS />
-            </Route>
-          </Switch>
+          <Route path="/about">
+            <AboutUs />
+          </Route>
+          <Route path="/users">
+            <ContactUS />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
         </Router>
-       {/* Home */}
-           
-              {/* Banner */}
-              {/* Search */}
-              {/* Cards */}
-          {/* Footer */}
-          {/* SearchPage */}
+        {/* Footer */}
       </div>
     )
   }

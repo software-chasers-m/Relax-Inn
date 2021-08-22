@@ -53,7 +53,7 @@ export class Banner extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3 style={{ backgroundColor: "black", padding: "0.5rem" }}>
+              <h3 style={{backgroundColor: "rgba(0, 0, 0 , 0.7)", padding: "0.5rem" }}>
                 Explore your destination with us
               </h3>
             </Carousel.Caption>
@@ -66,7 +66,7 @@ export class Banner extends Component {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3 style={{ backgroundColor: "black", padding: "0.5rem" }}>
+              <h3 style={{backgroundColor: "rgba(0, 0, 0 , 0.7)", padding: "0.5rem" }}>
                 Enjoy unforgettable experiences in dream hotels.
               </h3>
             </Carousel.Caption>
@@ -79,7 +79,7 @@ export class Banner extends Component {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3 style={{ backgroundColor: "black", padding: "0.5rem" }}>
+              <h3 style={{backgroundColor: "rgba(0, 0, 0 , 0.7)", padding: "0.5rem" }}>
                 Enjoy an extraordinary retreat with exclusive offers
               </h3>
             </Carousel.Caption>

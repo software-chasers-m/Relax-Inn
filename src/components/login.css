@@ -1,0 +1,13 @@
+.login {
+  background-color: #b47b7c;
+  color: #fff;
+  border: none;
+  transition: all ease-in-out 500ms;
+}
+.login:hover {
+  background-color: #fff;
+  color: #b47b7c;
+}
+.login:active {
+  background-color: #eee;
+}

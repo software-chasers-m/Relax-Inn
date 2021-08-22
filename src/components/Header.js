@@ -1,44 +1,57 @@
-import React, { Component } from 'react'
-import { Nav, DropdownButton, Navbar, Container, Button, Dropdown } from 'react-bootstrap'
 import Login from './Login';
 import Logout from './Logout';
 import { withAuth0 } from '@auth0/auth0-react';
+import React, { Component } from "react";
+import {
+  Navbar,
+  Container,
+  Nav,
+  Button,
+  Form,
+  FormControl,
+} from "react-bootstrap";
+import "./Header.css";
 export class Header extends Component {
-
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">logo and the to link to home page </Navbar.Brand>
-          <Nav className="me-auto">
-          </Nav>
-          <Navbar.Brand href="#home">page name </Navbar.Brand>
-          <DropdownButton
-            id="dropdown-button-dark-example2"
-            variant="dark"
-            menuVariant="dark"
-            title="name of page"
-            className="mt-2"
-          >
-            <Dropdown.Item href="#/action-2"> <li><a href="/">Home</a></li></Dropdown.Item>
-            <Dropdown.Item href="#/action-3">   <li><a href="/about">About us</a></li></Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item href="#/action-4"><li><a href="/contact-us">Contact us</a></li></Dropdown.Item>
-          </DropdownButton>
-
-            {
-          this.props.auth0.isAuthenticated ?
-            <Logout /> :
-            <Login />
-        }
-        
-
-
-        </Container>
-      </Navbar>
+      <div>
+        <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
+          <Container>
+            <Navbar.Brand href="#">Relax Inn</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav
+                className="mr-auto my-2 my-lg-0"
+                style={{ maxHeight: "100px" }}
+                navbarScroll
+              >
+                <Nav.Link href="#action1">Home</Nav.Link>
+                <Nav.Link href="#action2">Link</Nav.Link>
+              </Nav>
+              <Nav className="form-part">
+                <Form className="d-flex">
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="mr-2"
+                    aria-label="Search"
+                  />
+                </Form>
+                <Button variant="light" className="login ">
+                  {
+                    this.props.auth0.isAuthenticated ?
+                      <Logout /> :
+                      <Login />
+                  }
+                  Log In
+                </Button>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
     );
-
   }
-};
+}
 
 export default withAuth0(Header)

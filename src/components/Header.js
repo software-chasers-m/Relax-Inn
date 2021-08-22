@@ -1,3 +1,6 @@
+import Login from './Login';
+import Logout from './Logout';
+import { withAuth0 } from '@auth0/auth0-react';
 import React, { Component } from "react";
 import {
   Navbar,
@@ -12,7 +15,7 @@ export class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar style={{backgroundColor: ' rgb(191 130 131 / 34%)'}} expand="lg">
+        <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
           <Container>
             <Navbar.Brand href="#">Relax Inn</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,15 +29,22 @@ export class Header extends Component {
                 <Nav.Link href="#action2">Link</Nav.Link>
               </Nav>
               <Nav className="form-part">
-              <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="mr-2"
-                aria-label="Search"
-              />
-            </Form>
-            <Button variant="light" className="login ">Log In</Button>
+                <Form className="d-flex">
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="mr-2"
+                    aria-label="Search"
+                  />
+                </Form>
+                <Button variant="light" className="login ">
+                  {
+                    this.props.auth0.isAuthenticated ?
+                      <Logout /> :
+                      <Login />
+                  }
+                 
+                </Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -44,4 +54,4 @@ export class Header extends Component {
   }
 }
 
-export default Header;
+export default withAuth0(Header)

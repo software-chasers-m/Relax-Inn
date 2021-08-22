@@ -1,0 +1,11 @@
+.serarch-dates {
+  background-color: white;
+  font-weight: 900;
+  text-transform: inherit !important;
+  color: #b47b7c;
+  
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,24 @@
+@media screen and (min-width: 990px) {
+  .form-control {
+    margin-right: 8px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+  }
+  .form-part {
+    display: flex;
+  }
+}
+.login {
+  background-color: #b47b7c;
+  color: #fff;
+  border: none;
+  transition: all ease-in-out 500ms;
+}
+.login:hover {
+  background-color: #fff;
+  color: #b47b7c;
+}
+.login:active {
+  background-color: #eee;
+}

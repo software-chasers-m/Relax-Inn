@@ -1,12 +1,12 @@
 import Login from './Login';
 import Logout from './Logout';
 import { withAuth0 } from '@auth0/auth0-react';
+import logo from '../assets/logo5.png';
 import React, { Component } from "react";
 import {
   Navbar,
   Container,
   Nav,
-  Button,
   Form,
   FormControl,
 } from "react-bootstrap";
@@ -17,7 +17,7 @@ export class Header extends Component {
       <div>
         <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
           <Container>
-            <Navbar.Brand href="#">Relax Inn</Navbar.Brand>
+            <Navbar.Brand href="#"> <img src={logo} alt=""style={{width: '120px', height: '50px'}}/></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -37,14 +37,11 @@ export class Header extends Component {
                     aria-label="Search"
                   />
                 </Form>
-                <Button variant="light" className="login ">
                   {
                     this.props.auth0.isAuthenticated ?
                       <Logout /> :
                       <Login />
                   }
-                 
-                </Button>
               </Nav>
             </Navbar.Collapse>
           </Container>

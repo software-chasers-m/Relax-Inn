@@ -1,0 +1,282 @@
+[
+  {
+    "roomName": "Premium Room",
+    "images": [
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/10c190a8_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/10c190a8_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/86bf013c_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/86bf013c_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/be7b8b84_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/be7b8b84_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/10aa1c38_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/10aa1c38_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/434072f3_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/434072f3_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/1e9509eb_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/1e9509eb_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_b.jpg"
+      },
+      {
+        "caption": "Street View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_b.jpg"
+      }
+    ],
+    "maxOccupancy": {
+      "children": 2,
+      "total": 4,
+      "messageChildren": "(including up to 2 children)",
+      "messageTotal": "Sleeps 4 people"
+    }
+  },
+  {
+    "roomName": "Deluxe Room, 1 King Bed",
+    "images": [
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/14031a00_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/14031a00_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3eab20df_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3eab20df_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6588376b_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6588376b_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/cb356743_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/cb356743_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_b.jpg"
+      },
+      {
+        "caption": "Street View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_b.jpg"
+      }
+    ],
+    "maxOccupancy": {
+      "children": 2,
+      "total": 4,
+      "messageChildren": "(including up to 2 children)",
+      "messageTotal": "Sleeps 4 people"
+    }
+  },
+  {
+    "roomName": "Deluxe Room, 2 Queen Beds",
+    "images": [
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/c7370c3a_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/c7370c3a_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/b27d8e1d_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/b27d8e1d_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/88b56636_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/88b56636_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_b.jpg"
+      },
+      {
+        "caption": "City View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_b.jpg"
+      }
+    ],
+    "maxOccupancy": {
+      "children": 2,
+      "total": 4,
+      "messageChildren": "(including up to 2 children)",
+      "messageTotal": "Sleeps 4 people"
+    }
+  },
+  {
+    "roomName": "Executive Room, 1 Bedroom",
+    "images": [
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/f558fd65_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/f558fd65_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3eab20df_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3eab20df_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6588376b_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6588376b_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/b27d8e1d_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/b27d8e1d_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/14031a00_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/14031a00_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/88b56636_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/88b56636_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/f2155f79_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/f2155f79_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/cb356743_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/cb356743_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6698e710_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6698e710_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/56869ade_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/127b8f7e_b.jpg"
+      },
+      {
+        "caption": "Street View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_b.jpg"
+      },
+      {
+        "caption": "City View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_b.jpg"
+      }
+    ],
+    "maxOccupancy": {
+      "children": 2,
+      "total": 4,
+      "messageChildren": "(including up to 2 children)",
+      "messageTotal": "Sleeps 4 people"
+    }
+  },
+  {
+    "roomName": "Executive Suite",
+    "images": [
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/df0e718c_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/df0e718c_b.jpg"
+      },
+      {
+        "caption": "Living Area",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/c385ce33_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/c385ce33_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/eac93e6c_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/eac93e6c_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6bd1a76e_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6bd1a76e_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3847dc7c_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/3847dc7c_b.jpg"
+      },
+      {
+        "caption": "Room",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/95f069d1_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/95f069d1_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/0acd9ce2_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/0acd9ce2_b.jpg"
+      },
+      {
+        "caption": "Bathroom",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/e7c489a5_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/e7c489a5_b.jpg"
+      },
+      {
+        "caption": "Street View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/6299c2cc_b.jpg"
+      },
+      {
+        "caption": "City View",
+        "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_e.jpg",
+        "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/1000000/90000/83600/83547/8b809f41_b.jpg"
+      }
+    ],
+    "maxOccupancy": {
+      "children": 2,
+      "total": 4,
+      "messageChildren": "(including up to 2 children)",
+      "messageTotal": "Sleeps 4 people"
+    }
+  }
+]

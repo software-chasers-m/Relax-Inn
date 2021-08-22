@@ -1,0 +1,120 @@
+[
+    {
+      "id": 179663,
+      "name": "Landmark Amman Hotel & Conference Center",
+      "starRating": 5,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$100",
+          "exactCurrent": 100.14
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/kegYNwagRFfpYMk9MTHwNOggLso=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/90000/83600/83547/251eee9d_z.jpg"
+    },
+    {
+      "id": 169899,
+      "name": "Grand Palace Hotel",
+      "starRating": 4,
+      "address": "Amman, Jordan",
+      "img": "https://thumbnails.trvl-media.com/dvMZLpBQObu7zs-wCNw2Kk7gkgs=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/180000/177900/177873/ed04d653_z.jpg"
+    },
+    {
+      "id": 393062,
+      "name": "Amman International",
+      "starRating": 4,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$92",
+          "exactCurrent": 91.71,
+          "old": "$102"
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/vcKN3zrT2LlQnWcMn5b9Aoij4Z4=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/200000/198500/198454/ad1c6833_z.jpg"
+    },
+    {
+      "id": 476525,
+      "name": "Geneva Hotel Amman",
+      "starRating": 4,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$84",
+          "exactCurrent": 83.61,
+          "old": "$129"
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/XYW10FKv8cxAXJHMlOjHA7o6jWg=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/450000/444400/444358/3074a8a2_z.jpg"
+    },
+    {
+      "id": 139597,
+      "name": "Grand Hyatt Amman",
+      "starRating": 5,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$134",
+          "exactCurrent": 133.99
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/S49ijaj2jHo2PEPp8H1Hwjk9b5c=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/530000/521100/521093/a1ec5969_z.jpg"
+    },
+    {
+      "id": 106229,
+      "name": "InterContinental AMMAN JORDAN, an IHG Hotel",
+      "starRating": 5,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$141",
+          "exactCurrent": 141.04
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/J7CQBYX2IfnbknxKEKTpe7_z6uI=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/530000/521200/521131/89ca56b0_z.jpg"
+    },
+    {
+      "id": 115876,
+      "name": "Regency Palace Amman",
+      "starRating": 5,
+      "address": "Amman, Jordan",
+      "img": "https://thumbnails.trvl-media.com/7JAaBU7X1VDfSg-hikVawpZyjok=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/530000/526000/525994/18842a4b_z.jpg"
+    },
+    {
+      "id": 106448,
+      "name": "Amman Marriott Hotel",
+      "starRating": 5,
+      "address": "Amman, Jordan",
+      "price": {
+        "price": {
+          "current": "$127",
+          "exactCurrent": 126.94
+        },
+        "features": {
+          "paymentPreference": false,
+          "noCCRequired": false
+        }
+      },
+      "img": "https://thumbnails.trvl-media.com/l1TtIosg-ApuSO9p2M5M_kaKz5Q=/250x140/smart/filters:quality(60)/images.trvl-media.com/hotels/1000000/570000/561200/561173/5ec1afbd_z.jpg"
+    }
+  ]

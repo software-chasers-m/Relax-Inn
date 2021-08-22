@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Home from './components/Home';
+import data from'./component/data/data.json';
 import { withAuth0 } from '@auth0/auth0-react';
 import {
   BrowserRouter as Router,
@@ -11,7 +12,14 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
+
 export class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      hotalList: data,
+    }
+  }
   render() {
     return (
       <div className="App">

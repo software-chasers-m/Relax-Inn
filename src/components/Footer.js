@@ -11,7 +11,7 @@ export class Footer extends Component {
       >
         <Container style={{display: 'flex' ,flexDirection: 'column'}}>
           <Nav activeKey="/home" >
-            <Nav.Item style={{display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center'}}>
+            <Nav.Item style={{fontWeight: '500', display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center'}}>
               <p>Copyright © 2021 RealxInn.com™. All rights reserved.</p>
               <p>
                 RealxInn.com is part of Booking Holdings Inc., the world leader

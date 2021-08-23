@@ -16,7 +16,7 @@ export class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
+        <Navbar style={{ backgroundColor: 'rgb(191 130 133 / 56%)' }} expand="lg">
           <Container>
             <Navbar.Brand href="#"> <img src={logo} alt="" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import ContactUS from './components/ContactUs';
 import Hotels from './components/Hotels';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rooms from './components/Rooms';
 import Home from './components/Home';
+import User from './components/User';
 import { withAuth0 } from '@auth0/auth0-react';
 import axios from "axios";
 import {
@@ -34,6 +35,7 @@ export class App extends Component {
       checkOut: ''
     }
   }
+
   handleFormData = (e) => {
     e.preventDefault()
     let location = e.target.location.value;
@@ -72,6 +74,7 @@ export class App extends Component {
   }
 
   handleRoomsData = (e) => {
+    e.preventDefault();
     let id = e.target.id;
     let config = {
       method: 'get',
@@ -121,7 +124,14 @@ export class App extends Component {
                 <Nav className="form-part">
                   {
                     this.props.auth0.isAuthenticated ?
-                      <Logout /> :
+                      <>
+                        <div>
+                          <Logout />
+                        </div>
+                        <div>
+                          <User />
+                        </div>
+                      </> :
                       <Login />
                   }
                 </Nav>
@@ -137,7 +147,7 @@ export class App extends Component {
             }
             {this.state.roomsData &&
               <Route path="/Rooms">
-                <Rooms hotelsData={this.state.hotelsData} />
+                <Rooms roomsData={this.state.roomsData} />
               </Route>
             }
             <Route path="/users">

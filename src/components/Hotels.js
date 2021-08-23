@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 //import data from "../components/data/data.json";
 import { BsFillStarFill } from "react-icons/bs";
-import './Hotels.css';
+//import './Hotels.css';
 
 export class Hotal extends Component {
   constructor(props) {
@@ -20,9 +20,9 @@ export class Hotal extends Component {
           <h2 style={{fontWeight: 'bold', textAlign: 'center', color: '#9e7b7c'}}>Most Popular Hotels</h2>
           {this.state.hotelsData.map((item, index) => {
             return (<Col xs={12} md={6} lg={4} >
-              <Card className="card-container"style={{display: 'flex', borderRadius: '40px', textAlign: 'center' }}>
+              <Card className="card-container"style={{width: '320px', height: '350px', borderRadius: '40px', textAlign: 'center' }}>
                 <div>
-                <Card.Img style={{height: '150px'}}variant="top" src={item.img} />
+                <Card.Img style={{ height: '150px'}}variant="top" src={item.img} />
                 </div>
                 <div>
                 <Card.Body>

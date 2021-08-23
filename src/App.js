@@ -98,7 +98,7 @@ export class App extends Component {
     return (
       <>
         <Router>
-          <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
+          <Navbar style={{ backgroundColor: '#f6e6cb59' }} expand="lg">
             <Container>
               <Navbar.Brand href="#"> <img src={logo} alt="" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />

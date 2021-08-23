@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ContactUS from './components/ContactUs';
 import Hotels from './components/Hotels';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Rooms from './components/Rooms';
 import Home from './components/Home';
 import User from './components/User';
+import Footer from './components/Footer'
 import { withAuth0 } from '@auth0/auth0-react';
 import axios from "axios";
 import {
@@ -23,6 +23,7 @@ import {
   Nav,
 } from "react-bootstrap";
 import "./components/Header.css";
+import AboutUs from './components/AboutUs';
 const accessToken = process.env.REACT_APP_LOCATIONIQ;
 
 export class App extends Component {
@@ -105,7 +106,7 @@ export class App extends Component {
               <Navbar.Collapse id="navbarScroll">
                 <Nav
                   className="mr-auto my-2 my-lg-0"
-                  style={{ maxHeight: "100px" }}
+                  style={{ maxHeight: "100px", fontWeight: '700' }}
                   navbarScroll
                 >
                   <LinkContainer to="/">
@@ -138,7 +139,6 @@ export class App extends Component {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-
           <Switch>
             {this.state.hotelsData &&
               <Route path="/Hotels">
@@ -150,14 +150,16 @@ export class App extends Component {
                 <Rooms roomsData={this.state.roomsData} />
               </Route>
             }
-            <Route path="/users">
-              <ContactUS />
+            <Route path="/AboutUs">
+              <AboutUs />
             </Route>
             <Route path="/">
               <Home handleFormData={this.handleFormData} />
             </Route>
           </Switch>
+          <Footer />
         </Router>
+        
       </>
     )
   }

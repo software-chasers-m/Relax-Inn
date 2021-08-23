@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 //import data from "../components/data/data.json";
 import { BsFillStarFill } from "react-icons/bs";
-//import './Hotels.css';
+import './Hotels.css';
 
 export class Hotal extends Component {
   constructor(props) {

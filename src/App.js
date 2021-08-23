@@ -6,6 +6,7 @@ import Rooms from './components/Rooms';
 import Home from './components/Home';
 import User from './components/User';
 import Cart from './components/Cart';
+import Footer from './components/Footer'
 import { withAuth0 } from '@auth0/auth0-react';
 import axios from "axios";
 import {
@@ -24,6 +25,7 @@ import {
   Nav,
 } from "react-bootstrap";
 import "./components/Header.css";
+
 import data from "./components/data/data.json";
 import data1 from "./components/data/room.json";
 import ReactDOM from 'react-dom';
@@ -195,14 +197,14 @@ export class App extends Component {
     return (
       <>
         <Router>
-          <Navbar style={{ backgroundColor: ' rgb(191 130 131 / 34%)' }} expand="lg">
+          <Navbar style={{ backgroundColor: '#f6e6cb59' }} expand="lg">
             <Container>
               <Navbar.Brand href="#"> <img src={logo} alt="" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
                   className="mr-auto my-2 my-lg-0"
-                  style={{ maxHeight: "100px" }}
+                  style={{ maxHeight: "100px", fontWeight: '700' }}
                   navbarScroll
                 >
                   <LinkContainer to="/">
@@ -240,7 +242,6 @@ export class App extends Component {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-
           <Switch>
             {this.state.hotelsData &&
               <Route path="/Hotels">
@@ -262,6 +263,7 @@ export class App extends Component {
             }
             <Route path="/AboutUs">
               <AboutUs />
+
             </Route>
             <Route path="/cart">
               <Cart userData={this.state.userData}
@@ -272,7 +274,9 @@ export class App extends Component {
               <Home handleFormData={this.handleFormData} />
             </Route>
           </Switch>
+          <Footer />
         </Router>
+        
       </>
     )
   }

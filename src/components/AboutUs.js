@@ -7,6 +7,7 @@ import "./AboutUs.css";
 import photo1 from "../assets/mohammed.jpeg";
 import photo2 from "../assets/tahany.jpg";
 import photo3 from "../assets/moayad.jpg";
+
 export class AboutUs extends Component {
     render() {
         return (

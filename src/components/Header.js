@@ -23,7 +23,7 @@ export class Header extends Component {
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="mr-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
+                style={{ maxHeight: "100px"}}
                 navbarScroll
               >
                 <Nav.Link to="/">Home</Nav.Link>

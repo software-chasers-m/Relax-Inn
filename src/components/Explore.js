@@ -18,19 +18,19 @@ export class Explore extends Component {
               safety measures. So, during your search, you may find details
               like:
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <ListGroup vertical>
-                <ListGroup.Item style={{ border: 'none', borderBottom: "1px solid #777" }}>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
+            <ListGroup vertical>
+              <ListGroup.Item style={{  border: 'none',borderBottom: "1px solid #777"}}>
                   <h5>
-                    <FaCheckCircle style={{ marginRight: '10px' }} />
+                    <FaCheckCircle style={{ marginRight: '10px' }}/>
                     Official health standards
                   </h5>
                   <div>
                     Properties adhering to corporate/organisational sanitisation
                     guidelines.
                   </div>
-                </ListGroup.Item>
-                <ListGroup.Item style={{ border: 'none', borderBottom: "1px solid #777" }}>
+              </ListGroup.Item>
+              <ListGroup.Item style={{  border: 'none',borderBottom: "1px solid #777"}}>
                   <h5>
                     <img
                       style={{ width: "50px", height: "50px", marginRight: '10px' }}
@@ -43,8 +43,8 @@ export class Explore extends Component {
                     Contactless check-in and check-out along with other social
                     distancing measures.
                   </div>
-                </ListGroup.Item>
-                <ListGroup.Item style={{ border: 'none', borderBottom: "1px solid #777" }}>
+              </ListGroup.Item>
+              <ListGroup.Item style={{  border: 'none',borderBottom: "1px solid #777" }}>
                   <h5>
                     <img
                       style={{ width: "34px", height: "34px", marginRight: '10px' }}
@@ -57,8 +57,8 @@ export class Explore extends Component {
                     The use of disinfectant and whether properties enforce a gap
                     period between stays.
                   </div>
-                </ListGroup.Item>
-                <ListGroup.Item style={{ border: 'none', borderBottom: "1px solid #777" }}>
+              </ListGroup.Item>
+              <ListGroup.Item style={{  border: 'none',borderBottom: "1px solid #777" }}>
                   <h6>
                     <img
                       style={{ width: "50px", height: "50px", marginRight: '10px' }}
@@ -68,11 +68,11 @@ export class Explore extends Component {
                     Essentials at the property
                   </h6>
                   <div>
-                    Free hand sanitiser for guests and individually wrapped food
-                    options.
+                  Free hand sanitiser for guests and individually wrapped food
+                  options.
                   </div>
-                </ListGroup.Item>
-              </ListGroup>
+              </ListGroup.Item>
+            </ListGroup>
             </div>
           </section>
         </Container>

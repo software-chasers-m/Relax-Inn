@@ -1,45 +1,15 @@
 import React, { Component } from "react";
 import { Card, CardGroup, Container } from "react-bootstrap";
 import "./Cards.css";
-import axios from "axios";
-
+import imgCard from "../assets/fairmont1.jpg";
+import imgCard1 from "../assets/aqaba1.jpg";
+import imgCard2 from "../assets/four.jpg";
 export class Cards extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      randomData: [],
-    }
-  }
-  componentDidMount = () => {
-    axios.get('https://relax-inn.herokuapp.com/storeData')
-      .then(res => {
-        this.setState({
-          randomData: res.data,
-          first: first,
-          second: second,
-          third: third,
-        })
-      })
-    let first = Math.floor(Math.random() * (25 + 1));
-    let second = Math.floor(Math.random() * (25 + 1));
-    while (first === second) {
-      second = Math.floor(Math.random() * (25 + 1));
-    }
-    let third = Math.floor(Math.random() * (25 + 1));
-    while (first === third || second === third) {
-      third = Math.floor(Math.random() * (25 + 1));
-    }
-    this.setState({
-      first: first,
-      second: second,
-      third: third,
-    })
-  }
   render() {
     return (
       <div className="m-4">
         <Container>
-          <h2 className="mx-auto text-center">Luxury Hotels For You</h2>
+          <h2 className="mx-auto text-center">Luxury Hotels in Jordan</h2>
           <CardGroup>
             <Card
               className="m-2 card"
@@ -47,19 +17,19 @@ export class Cards extends Component {
             >
               <Card.Img
                 variant="top"
-                src={this.state.randomData[this.state.first].img}
+                src={imgCard}
                 style={{ borderRadius: "15px 15px 0 0" }}
               />
               <Card.Body>
-                <Card.Title>{this.state.randomData[this.state.first].hotelName}</Card.Title>
+                <Card.Title>Fairmont Amman</Card.Title>
                 <Card.Text>
-                  The five star deluxe {this.state.randomData[this.state.first].hotelName} offers contemporary
+                  the five star deluxe Fairmont Amman hotel offers contemporary
                   design and unparalleled views of the stunning Amman hills
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
                 <small>
-                  {this.state.randomData[this.state.first].address}
+                  Beirut Street, Fifth Circle 6, 6, Amman, 11183, Jordan
                 </small>
               </Card.Footer>
             </Card>
@@ -69,13 +39,13 @@ export class Cards extends Component {
             >
               <Card.Img
                 variant="top"
-                src={this.state.randomData[this.state.second].img}
+                src={imgCard1}
                 style={{ borderRadius: "15px 15px 0 0" }}
               />
               <Card.Body>
-                <Card.Title>{this.state.randomData[this.state.second].hotelName}</Card.Title>
+                <Card.Title>Kempinski Hotel Aqaba</Card.Title>
                 <Card.Text>
-                  Overlooking the Sea, this beach resort offers 5 different
+                  Overlooking the Red Sea, this beach resort offers 5 different
                   dining outlets and an outdoor pool bordering white sandy
                   beaches. Its modern designs add to the tranquillity of the
                   surroundings.
@@ -83,7 +53,7 @@ export class Cards extends Component {
               </Card.Body>
               <Card.Footer>
                 <small>
-                  {this.state.randomData[this.state.second].address}
+                  King Hussein Street, 77110 Aqaba, Jordan
                 </small>
               </Card.Footer>
             </Card>
@@ -93,18 +63,20 @@ export class Cards extends Component {
             >
               <Card.Img
                 variant="top"
-                src={this.state.randomData[this.state.third].img}
+                src={imgCard2}
                 style={{ borderRadius: "15px 15px 0 0" }}
               />
               <Card.Body>
-                <Card.Title>{this.state.randomData[this.state.third].hotelName}</Card.Title>
+                <Card.Title>Four Seasons Hotel Amman</Card.Title>
                 <Card.Text>
-                  This {this.state.randomData[this.state.third].starRating}-star hotel offers comfortable rooms, Wi-Fi for an additional fee and free parking.
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the f.
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
                 <small>
-                  {this.state.randomData[this.state.third].address}
+                  5th Circle, Al-Kindi Street, 11195 Amman, Jordan
                 </small>
               </Card.Footer>
             </Card>

@@ -19,13 +19,13 @@ export class AboutUs extends Component {
                     different types of Hotels depend on the budget or how many stars and
                     the services each hotel gives.
                 </p>
-                <Container className="center-photo">
+                <Container className="center-photo d-flex justify-content-center">
                     <CardGroup className="card__collection clear-fix">
                         <Row>
                             <Col>
                                 <div
                                     className="cards cards--two"
-                                    style={{ minWidth: '250px' }}
+                                    style={{ minWidth: '250px', marginLeft: '25px' }}
                                 >
                                     <img
                                         src={photo3}
@@ -73,7 +73,7 @@ export class AboutUs extends Component {
                             <Col>
                                 <div
                                     className="cards cards--two"
-                                    style={{ marginRight: "4em" }}
+                                    style={{ minWidth: '250px', marginLeft: '25px' }}
                                 >
                                     <img src={photo2} className="img-responsive" alt="Cards" />
                                     <span className="cards--two__rect"></span>
@@ -114,7 +114,8 @@ export class AboutUs extends Component {
                                 </div>
                             </Col>
                             <Col>
-                                <div className="cards cards--two">
+                                <div className="cards cards--two"
+                                    style={{ minWidth: '250px', marginLeft: '25px' }}>
                                     <img
                                         src={photo1}
                                         style={{ height: " 100%" }}

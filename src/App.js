@@ -25,20 +25,16 @@ import {
   Nav,
 } from "react-bootstrap";
 import "./components/Header.css";
-
-import data from "./components/data/data.json";
-import data1 from "./components/data/room.json";
-import ReactDOM from 'react-dom';
 const accessToken = process.env.REACT_APP_LOCATIONIQ;
 
 export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hotelsData: data,
-      roomsData: data1,
-      checkIn: '2021-8-25',
-      checkOut: '2021-8-27',
+      hotelsData: [],
+      roomsData: [],
+      checkIn: '',
+      checkOut: '',
       hotelImage: '',
       hotelName: '',
       price: '',
@@ -78,31 +74,30 @@ export class App extends Component {
       checkIn: checkIn,
       checkOut: checkOut,
     })
-    // console.log(sort);
-    // let urlLocation = `https://eu1.locationiq.com/v1/search.php?key=${accessToken}&q=${location}&format=json`
-    // axios.get(urlLocation).then(res => {
-    //   console.log(res.data[0].lat, res.data[0].lon);
-    //   let lat = res.data[0].lat;
-    //   let lon = res.data[0].lon;
-    //   let config = {
-    //     method: 'get',
-    //     baseURL: "http://localhost:8000",
-    //     url: '/hotelName',
-    //     params: {
-    //       lat: lat,
-    //       lon: lon,
-    //       checkIn: checkIn,
-    //       checkOut: checkOut,
-    //       sortOrder: sort
-    //     }
-    //   }
-    //   axios(config).then(response => {
-    //     this.setState({
-    //       hotelsData: response.data,
-    //     })
-    //     console.log(this.state.hotelsData);
-    //   })
-    // })
+    let urlLocation = `https://eu1.locationiq.com/v1/search.php?key=${accessToken}&q=${location}&format=json`
+    axios.get(urlLocation).then(res => {
+      console.log(res.data[0].lat, res.data[0].lon);
+      let lat = res.data[0].lat;
+      let lon = res.data[0].lon;
+      let config = {
+        method: 'get',
+        baseURL: "http://localhost:8000",
+        url: '/hotelName',
+        params: {
+          lat: lat,
+          lon: lon,
+          checkIn: checkIn,
+          checkOut: checkOut,
+          sortOrder: sort
+        }
+      }
+      axios(config).then(response => {
+        this.setState({
+          hotelsData: response.data,
+        })
+        console.log(this.state.hotelsData);
+      })
+    })
   }
 
   handleRoomsData = (e) => {
@@ -115,27 +110,27 @@ export class App extends Component {
     const diffInDays = Math.round(diffInTime / oneDay);
     const hotelArray = this.state.hotelsData.find(el => el.id === Number(id));
     this.setState({
-      price: e.target.value.slice(1, 4),
+      price: e.target.value.slice(1,),
       hotelImage: hotelArray.img,
       hotelName: hotelArray.name,
       stayDays: diffInDays
     })
-    // let config = {
-    //   method: 'get',
-    //   baseURL: "http://localhost:8000",
-    //   url: '/rooms',
-    //   params: {
-    //     id: id,
-    //     checkIn: this.state.checkIn,
-    //     checkOut: this.state.checkOut,
-    //   }
-    // }
-    // axios(config).then(response => {
-    //   this.setState({
-    //     roomsData: response.data,
-    //   })
-    //   console.log(this.state.roomsData);
-    // })
+    let config = {
+      method: 'get',
+      baseURL: "http://localhost:8000",
+      url: '/rooms',
+      params: {
+        id: id,
+        checkIn: this.state.checkIn,
+        checkOut: this.state.checkOut,
+      }
+    }
+    axios(config).then(response => {
+      this.setState({
+        roomsData: response.data,
+      })
+      console.log(this.state.roomsData);
+    })
   }
 
 
@@ -156,7 +151,7 @@ export class App extends Component {
       messageChildren: roomArray.maxOccupancy.messageChildren,
       messageTotal: roomArray.maxOccupancy.messageTotal,
       img: roomArray.images[0].fullSizeUrl,
-      email: this.props.auth0.user.name
+      // email: this.props.auth0.user.name
     }
     let config = {
       // headers: { "Authorization": `Bearer ${jwt}` },
@@ -245,12 +240,13 @@ export class App extends Component {
           <Switch>
             {this.state.hotelsData &&
               <Route path="/Hotels">
-                <Hotels history={this.props.history} hotelsData={this.state.hotelsData}
+                <Hotels
+                  hotelsData={this.state.hotelsData}
                   handleRoomsData={this.handleRoomsData}
                 />
               </Route>
             }
-            {this.state.price &&
+            {this.state.roomsData &&
               <Route path="/Rooms">
                 <Rooms roomsData={this.state.roomsData}
                   price={this.state.price}
@@ -263,7 +259,6 @@ export class App extends Component {
             }
             <Route path="/AboutUs">
               <AboutUs />
-
             </Route>
             <Route path="/cart">
               <Cart userData={this.state.userData}
@@ -276,7 +271,6 @@ export class App extends Component {
           </Switch>
           <Footer />
         </Router>
-        
       </>
     )
   }

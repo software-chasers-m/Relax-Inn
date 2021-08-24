@@ -14,17 +14,17 @@ export class Banner extends Component {
             <Row className="g-3 p-2 d-flex justify-content-center">
               <Col md style={{ maxWidth: '300px' }}>
                 <FloatingLabel controlId="location" label="Location">
-                  <Form.Control type="text" placeholder="Amman, Istanbul" className="rounded-pill" />
+                  <Form.Control type="text" placeholder="Amman, Istanbul" className="rounded-pill" required />
                 </FloatingLabel>
               </Col>
               <Col md style={{ maxWidth: '300px' }}>
                 <FloatingLabel controlId="checkin" label="Check In">
-                  <Form.Control type="date" className="rounded-pill" />
+                  <Form.Control type="date" className="rounded-pill" required />
                 </FloatingLabel>
               </Col>
               <Col md style={{ maxWidth: '300px' }}>
                 <FloatingLabel controlId="checkout" label="Check Out">
-                  <Form.Control type="date" className="rounded-pill" />
+                  <Form.Control type="date" className="rounded-pill" required />
                 </FloatingLabel>
               </Col>
             </Row>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data1 from "../components/data/room.json";
+// import data1 from "../components/data/room.json";
 import { Button, Container, Row, Col, Badge } from "react-bootstrap";
 import {
   FaUtensils,
@@ -13,8 +13,9 @@ import {
 export class Rooms extends Component {
   render() {
     return (
+      this.props.roomsData.length > 0 &&
       <>
-        <div style={{ backgroundColor: '#FFE3E3' }}>
+        <div style={{ backgroundColor: '#FFE3E3' }} className="pb-3">
           <div>
             <img src={this.props.hotelImage} alt="hotelImage" style={{ width: '100%', height: '400px' }} />
             <h2 className="mx-auto text-center bg-dark text-white rounded-3 opacity-75 p-3" style={{ maxWidth: '500px', position: 'relative', top: "-250px" }}>
@@ -57,7 +58,7 @@ export class Rooms extends Component {
             </Container>
           </div >
           <Container style={{ maxWidth: '900px' }}>
-            {data1.map((el, index) => {
+            {this.props.roomsData.map((el, index) => {
               return (
                 <div key={index} className="card mb-3" style={{ width: '100%' }}>
                   <div className="row g-0">

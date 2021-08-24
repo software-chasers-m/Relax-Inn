@@ -51,7 +51,7 @@ export class App extends Component {
   componentDidMount = () => {
     const config = {
       method: 'get',
-      baseURL: "http://localhost:8000",
+      baseURL: "https://relax-inn.herokuapp.com",
       url: '/userData',
     }
     axios(config)
@@ -79,7 +79,7 @@ export class App extends Component {
       let lon = res.data[0].lon;
       let config = {
         method: 'get',
-        baseURL: "http://localhost:8000",
+        baseURL: "https://relax-inn.herokuapp.com",
         url: '/hotelName',
         params: {
           lat: lat,
@@ -115,7 +115,7 @@ export class App extends Component {
     })
     let config = {
       method: 'get',
-      baseURL: "http://localhost:8000",
+      baseURL: "https://relax-inn.herokuapp.com",
       url: '/rooms',
       params: {
         id: id,
@@ -154,7 +154,7 @@ export class App extends Component {
       let config = {
         // headers: { "Authorization": `Bearer ${jwt}` },
         method: 'post',
-        baseURL: "http://localhost:8000",
+        baseURL: "https://relax-inn.herokuapp.com",
         url: '/userData',
         data: data
       }
@@ -171,7 +171,7 @@ export class App extends Component {
   deleteRoom = (roomId) => {
     let config = {
       method: 'delete',
-      baseURL: "http://localhost:8000",
+      baseURL: "https://relax-inn.herokuapp.com",
       url: `/userData/${roomId}`,
     }
     axios(config).then(res => {

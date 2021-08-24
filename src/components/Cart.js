@@ -71,9 +71,8 @@ class Cart extends Component {
       totalPrice: totalPrice,
     }
     let config = {
-      // headers: { "Authorization": `Bearer ${jwt}` },
       method: 'put',
-      baseURL: "http://localhost:8000",
+      baseURL: "https://relax-inn.herokuapp.com",
       url: `/userData/${this.state.roomId}`,
       data: data
     }

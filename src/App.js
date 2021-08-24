@@ -23,8 +23,12 @@ import {
   Navbar,
   Container,
   Nav,
+  Badge
 } from "react-bootstrap";
 import "./components/Header.css";
+import swal from 'sweetalert';
+import { FaShoppingCart } from "react-icons/fa";
+
 const accessToken = process.env.REACT_APP_LOCATIONIQ;
 
 export class App extends Component {
@@ -45,19 +49,15 @@ export class App extends Component {
   }
 
   componentDidMount = () => {
-    // if (this.props.auth0.isAuthenticated) {
-    //   this.props.auth0.getIdTokenClaims()
-    //     .then(result => {
-    //       const jwt = result.__raw;
+    console.log(this.props.auth0.user);
     const config = {
-      // headers: { "Authorization": `Bearer ${jwt}` },
       method: 'get',
       baseURL: "http://localhost:8000",
-      url: '/userData'
+      url: '/userData',
     }
     axios(config)
       .then(axiosResponse => {
-        console.log(axiosResponse);
+        console.log(axiosResponse.data);
         this.setState({
           userData: axiosResponse.data,
         });
@@ -65,6 +65,7 @@ export class App extends Component {
   }
 
   handleFormData = (e) => {
+    console.log(this.props.auth0.user);
     e.preventDefault()
     let location = e.target.location.value;
     let checkIn = e.target.checkin.value;
@@ -136,47 +137,44 @@ export class App extends Component {
 
 
   addToCart = (e) => {
-    e.preventDefault();
-    let id = e.target.id;
-    const roomArray = this.state.roomsData.find(el => el.roomName === id);
-    this.setState({
-      roomPrice: e.target.value.slice(1, 4),
-    })
-    let data = {
-      hotelName: this.state.hotelName,
-      roomName: id,
-      checkIn: this.state.checkIn,
-      checkOut: this.state.checkOut,
-      totalPrice: this.state.roomPrice,
-      messageChildren: roomArray.maxOccupancy.messageChildren,
-      messageTotal: roomArray.maxOccupancy.messageTotal,
-      img: roomArray.images[0].fullSizeUrl,
-      // email: this.props.auth0.user.name
+    if (!this.props.auth0.isAuthenticated) {
+      swal("You Have To Log in", " ", "warning");
+    } else {
+      swal("Successfully Added To Cart", " ", "success",);
+      e.preventDefault();
+      let id = e.target.id;
+      const roomArray = this.state.roomsData.find(el => el.roomName === id);
+      let data = {
+        hotelName: this.state.hotelName,
+        roomName: id,
+        checkIn: this.state.checkIn,
+        checkOut: this.state.checkOut,
+        totalPrice: e.target.value.slice(1,) * this.state.stayDays,
+        messageChildren: roomArray.maxOccupancy.messageChildren,
+        messageTotal: roomArray.maxOccupancy.messageTotal,
+        img: roomArray.images[0].fullSizeUrl,
+        email: this.props.auth0.user.email
+      }
+      let config = {
+        // headers: { "Authorization": `Bearer ${jwt}` },
+        method: 'post',
+        baseURL: "http://localhost:8000",
+        url: '/userData',
+        data: data
+      }
+      axios(config).then(res => {
+        let userData = this.state.userData
+        userData.push(res.data)
+        this.setState({
+          userData: userData
+        })
+        console.log(userData)
+      });
     }
-    let config = {
-      // headers: { "Authorization": `Bearer ${jwt}` },
-      method: 'post',
-      baseURL: "http://localhost:8000",
-      url: '/userData',
-      data: data
-    }
-    axios(config).then(res => {
-      let userData = this.state.userData
-      userData.push(res.data)
-      this.setState({
-        userData: userData
-      })
-      console.log(userData)
-    });
   }
 
   deleteRoom = (roomId) => {
-    // if (this.props.auth0.isAuthenticated) {
-    //   this.props.auth0.getIdTokenClaims()
-    //     .then(result => {
-    //       const jwt = result.__raw;
     let config = {
-      // headers: { "Authorization": `Bearer ${jwt}` },
       method: 'delete',
       baseURL: "http://localhost:8000",
       url: `/userData/${roomId}`,
@@ -186,15 +184,17 @@ export class App extends Component {
         userData: res.data
       })
     })
+    this.componentDidMount();
+    swal("Successfuly Deleted", " ", "success");
   }
 
   render() {
     return (
       <>
         <Router>
-          <Navbar style={{ backgroundColor: '#f6e6cb59' }} expand="lg">
-            <Container>
-              <Navbar.Brand href="#"> <img src={logo} alt="" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
+          <Container fluid style={{ padding: '0' }}>
+            <Navbar style={{ backgroundColor: '#f6e6cb59', paddingLeft: '25px', paddingRight: '25px' }} expand="lg">
+              <Navbar.Brand href="#"> <img src={logo} alt="logo" style={{ width: '120px', height: '50px' }} /></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -208,35 +208,47 @@ export class App extends Component {
                   <LinkContainer to="/AboutUs">
                     <Nav.Link>About Us</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to="/Hotels">
-                    <Nav.Link>Hotels</Nav.Link>
-                  </LinkContainer>
-                  <LinkContainer to="/Rooms">
-                    <Nav.Link>Rooms</Nav.Link>
-                  </LinkContainer>
+                  {this.state.hotelsData.length > 0 &&
+                    <LinkContainer to="/Hotels">
+                      <Nav.Link>Hotels</Nav.Link>
+                    </LinkContainer>
+                  }
+                  {this.state.roomsData.length > 0 &&
+                    < LinkContainer to="/Rooms">
+                      <Nav.Link>Rooms</Nav.Link>
+                    </LinkContainer>
+                  }
                 </Nav>
-                <Nav className="form-part">
+                <Nav className="form-part"
+                  style={{ fontWeight: '700' }}>
                   {
                     this.props.auth0.isAuthenticated ?
                       <>
+                        {this.state.userData.length > 0 &&
+                          <>
+                            <div>
+                              <LinkContainer to="/Cart">
+                                <FaShoppingCart className="my-2" size={25} />
+                              </LinkContainer>
+                            </div>
+                            <div>
+                              <Badge pill className="me-2" style={{ position: 'relative', top: '-12px' }} bg="secondary">{this.state.userData.length}</Badge>
+                            </div>
+                          </>
+                        }
                         <div>
-                          <LinkContainer to="/Cart">
-                            <Nav.Link>Cart</Nav.Link>
-                          </LinkContainer>
+                          <User />
                         </div>
                         <div>
                           <Logout />
-                        </div>
-                        <div>
-                          <User />
                         </div>
                       </> :
                       <Login />
                   }
                 </Nav>
               </Navbar.Collapse>
-            </Container>
-          </Navbar>
+            </Navbar>
+          </Container>
           <Switch>
             {this.state.hotelsData &&
               <Route path="/Hotels">

@@ -9,14 +9,9 @@ export class Footer extends Component {
         style={{ backgroundColor: "#F6E6CB" }}
         className="justify-content-center"
       >
-        <Container style={{display: 'flex' ,flexDirection: 'column'}}>
+        <Container style={{ display: 'flex', flexDirection: 'column' }}>
           <Nav activeKey="/home" >
-            <Nav.Item style={{fontWeight: '500', display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center'}}>
-              <p>Copyright © 2021 RealxInn.com™. All rights reserved.</p>
-              <p>
-                RealxInn.com is part of Booking Holdings Inc., the world leader
-                in online travel and related services.
-              </p>
+            <Nav.Item style={{ fontWeight: '500', display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
               <Navbar.Brand href="#">
                 <img
                   src={logo}
@@ -28,6 +23,11 @@ export class Footer extends Component {
                   }}
                 />
               </Navbar.Brand>
+              <p>
+                RealxInn.com is part of Booking Holdings Inc., the world leader
+                in online travel and related services.
+              </p>
+              <p>Copyright © 2021 RealxInn.com™. All rights reserved.</p>
             </Nav.Item>
           </Nav>
         </Container>

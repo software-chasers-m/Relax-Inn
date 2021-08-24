@@ -13,10 +13,26 @@
   left:25%;
   top: 150px;
 }
-
+.search {
+  background-color: #664949;
+  color: #fff;
+  border: none;
+  transition: all ease-in-out 1s;
+}
+.search:hover {
+  background-color: #fff;
+  color: #000;
+}
+.search:active {
+  background-color: #eee;
+}
 @media only screen and (max-width: 800px) {
   .form {
-    left:5%;
+    margin: 5px;
+    left:0;
     top:100px;
+    background-color: #7FC8A9;
+    padding:15px;
+    border-radius: 10px;
   }
 }

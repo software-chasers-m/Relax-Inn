@@ -74,7 +74,6 @@ export class App extends Component {
     })
     let urlLocation = `https://eu1.locationiq.com/v1/search.php?key=${accessToken}&q=${location}&format=json`
     axios.get(urlLocation).then(res => {
-      console.log(res.data[0].lat, res.data[0].lon);
       let lat = res.data[0].lat;
       let lon = res.data[0].lon;
       let config = {
@@ -93,7 +92,6 @@ export class App extends Component {
         this.setState({
           hotelsData: response.data,
         })
-        console.log(this.state.hotelsData);
       })
     })
   }

@@ -9,7 +9,7 @@ export class Cards extends Component {
     return (
       <div className="m-4">
         <Container>
-          <h2 className="m-2">Luxury Hotels in Jordan</h2>
+          <h2 className="mx-auto text-center">Luxury Hotels in Jordan</h2>
           <CardGroup>
             <Card
               className="m-2 card"

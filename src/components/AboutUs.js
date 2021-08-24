@@ -35,7 +35,7 @@ export class AboutUs extends Component {
                                     />
                                     <span className="cards--two__rect"></span>
                                     <span className="cards--two__tri"></span>
-                                    <p>Tahany Ali</p>
+                                    <p>Moayad Alhaj</p>
                                     <ul className="cards__list">
                                         <li>
                                             <a

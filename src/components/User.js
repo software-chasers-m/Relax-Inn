@@ -8,8 +8,7 @@ export class User extends Component {
         {
           this.props.auth0.isAuthenticated &&
           <>
-            <p className="m-2">{this.props.auth0.user.name}</p>
-            <img src={this.props.auth0.user.picture} style={{ width: '30px' }} className="rounded-circle" alt="userImage" />
+            <img src={this.props.auth0.user.picture} style={{ width: '35px' }} className="rounded-circle" alt="userImage" />
           </>
         }
       </div>

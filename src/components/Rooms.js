@@ -9,6 +9,7 @@ import {
   FaWind,
   FaBinoculars
 } from "react-icons/fa";
+import noImage from '../assets/aqaba1.jpg';
 
 export class Rooms extends Component {
   render() {
@@ -63,15 +64,21 @@ export class Rooms extends Component {
                 <div key={index} className="card mb-3" style={{ width: '100%' }}>
                   <div className="row g-0">
                     <div className="col-md-4">
-                      <img src={el.images[0].fullSizeUrl} className="img-fluid rounded-start" alt="..." />
+                      {el.images.length ?
+                        <img src={el.images[0].fullSizeUrl} className="img-fluid rounded-start" alt="..." />
+                        : <img src={noImage} className="img-fluid rounded-start" alt="..." />
+                      }
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title">{el.roomName}</h5>
-                        <p className="card-text">
-                          Max children : {el.maxOccupancy.messageChildren}<br></br>
-                          {el.maxOccupancy.messageTotal}
-                        </p>
+                        {el.maxOccupancy ?
+                          <p className="card-text">
+                            Max children : {el.maxOccupancy.messageChildren}<br></br>
+                            {el.maxOccupancy.messageTotal}
+                          </p>
+                          : <p className="card-text">No Childern allowed! Adults Only.</p>
+                        }
                         <div className="d-flex justify-content-between align-items-center">
                           <div>
                             {Number(this.props.price) ? (<>Price: &nbsp;

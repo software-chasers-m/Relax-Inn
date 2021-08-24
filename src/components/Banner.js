@@ -11,7 +11,7 @@ export class Banner extends Component {
       <>
         <Container className="container-sm" fluid style={{ padding: '0' }}>
           <Navbar className="navbar navbar-expand-lg navbar-dark" expand="lg" style={{ padding: '0' }}>
-            <Navbar.Toggle aria-controls="navbarScroll" style={{ position: 'absolute', top: '50px', left: '45%', zIndex: '5', backgroundColor: '#000' }} />
+            <Navbar.Toggle aria-controls="navbarScroll" style={{ position: 'absolute', top: '50px', left: '45%', zIndex: '5', backgroundColor: '#664949' }} />
             <Navbar.Collapse id="navbarScroll">
               <Form className="form" onSubmit={(e) => this.props.handleFormData(e)} style={{ position: 'absolute', zIndex: '5' }}>
                 <Container>
@@ -49,7 +49,7 @@ export class Banner extends Component {
                       </FloatingLabel>
                     </Col>
                     <Col md className="mt-4 text-center" style={{ maxWidth: '300px' }}>
-                      <Button type="submit" className="rounded-pill" style={{ width: '150px' }}>Search</Button>
+                      <Button type="submit" className="rounded-pill search" style={{ width: '150px' }}>Search</Button>
                     </Col>
                   </Row>
                 </Container>

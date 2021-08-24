@@ -72,12 +72,12 @@ export class Rooms extends Component {
                     <div className="col-md-8">
                       <div className="card-body">
                         <h5 className="card-title">{el.roomName}</h5>
-                        {el.maxOccupancy ?
+                        {el.maxOccupancy.length ?
                           <p className="card-text">
                             Max children : {el.maxOccupancy.messageChildren}<br></br>
                             {el.maxOccupancy.messageTotal}
                           </p>
-                          : <p className="card-text">No Childern allowed! Adults Only.</p>
+                          : <p className="card-text">Max children : (including up to 3 children)</p>
                         }
                         <div className="d-flex justify-content-between align-items-center">
                           <div>

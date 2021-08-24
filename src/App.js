@@ -49,7 +49,6 @@ export class App extends Component {
   }
 
   componentDidMount = () => {
-    console.log(this.props.auth0.user);
     const config = {
       method: 'get',
       baseURL: "http://localhost:8000",
@@ -57,7 +56,6 @@ export class App extends Component {
     }
     axios(config)
       .then(axiosResponse => {
-        console.log(axiosResponse.data);
         this.setState({
           userData: axiosResponse.data,
         });
@@ -65,7 +63,6 @@ export class App extends Component {
   }
 
   handleFormData = (e) => {
-    console.log(this.props.auth0.user);
     e.preventDefault()
     let location = e.target.location.value;
     let checkIn = e.target.checkin.value;
@@ -130,7 +127,6 @@ export class App extends Component {
       this.setState({
         roomsData: response.data,
       })
-      console.log(this.state.roomsData);
     })
   }
 
@@ -168,7 +164,6 @@ export class App extends Component {
         this.setState({
           userData: userData
         })
-        console.log(userData)
       });
     }
   }
@@ -181,7 +176,7 @@ export class App extends Component {
     }
     axios(config).then(res => {
       this.setState({
-        userData: res.data
+        userData: res.data,
       })
     })
     this.componentDidMount();

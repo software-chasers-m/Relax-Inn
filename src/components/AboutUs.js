@@ -11,7 +11,7 @@ import photo3 from "../assets/moayad.jpg";
 export class AboutUs extends Component {
     render() {
         return (
-            <Container className="my-5">
+            <Container className="my-5 fst-italic">
                 <h1 style={{ margin: "20px", textAlign: "center" }}>About Us</h1>
                 <p style={{ padding: "10px", margin: "20px", textAlign: "center" }}>
                     <b>Relax Inn</b> was founded in 2021, Relax Inn serving the people who
@@ -19,6 +19,7 @@ export class AboutUs extends Component {
                     different types of Hotels depend on the budget or how many stars and
                     the services each hotel gives.
                 </p>
+                <h3 className="mx-auto text-center fs-2">Meet Our Team</h3>
                 <Container className="center-photo d-flex justify-content-center">
                     <CardGroup className="card__collection clear-fix">
                         <Row>

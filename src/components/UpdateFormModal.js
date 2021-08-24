@@ -58,7 +58,7 @@ class UpdateFormModal extends Component {
       <div>
         <Modal
           show={this.props.show}
-          size="lg"
+          size="md"
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >

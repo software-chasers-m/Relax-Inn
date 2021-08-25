@@ -265,7 +265,7 @@ export class App extends Component {
             <Route path="/AboutUs">
               <AboutUs />
             </Route>
-            <Route path="/cart">
+            <Route path="/Cart">
               <Cart userData={this.state.userData}
                 deleteRoom={this.deleteRoom}
               />

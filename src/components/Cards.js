@@ -7,13 +7,13 @@ import imgCard2 from "../assets/four.jpg";
 export class Cards extends Component {
   render() {
     return (
-      <div className="m-4">
+      <div className="m-2">
         <Container>
-          <h2 className="mx-auto text-center">Luxury Hotels in Jordan</h2>
+          <h2 className="mx-auto mt-3 text-center">Luxury Hotels in Jordan</h2>
           <CardGroup>
             <Card
-              className="m-2 card"
-              style={{ borderRadius: "15px 15px 0 0" }}
+              className="mx-auto my-4 card"
+              style={{ borderRadius: "15px 15px 0 0", maxWidth: '375px' }}
             >
               <Card.Img
                 variant="top"
@@ -34,8 +34,8 @@ export class Cards extends Component {
               </Card.Footer>
             </Card>
             <Card
-              className="m-2 card"
-              style={{ borderRadius: "15px 15px 0 0" }}
+              className="mx-auto my-4 card"
+              style={{ borderRadius: "15px 15px 0 0", maxWidth: '375px' }}
             >
               <Card.Img
                 variant="top"
@@ -58,8 +58,8 @@ export class Cards extends Component {
               </Card.Footer>
             </Card>
             <Card
-              className="m-2 card"
-              style={{ borderRadius: "15px 15px 0 0" }}
+              className="mx-auto my-4 card"
+              style={{ borderRadius: "15px 15px 0 0", maxWidth: '375px' }}
             >
               <Card.Img
                 variant="top"

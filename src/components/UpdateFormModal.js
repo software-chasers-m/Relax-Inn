@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
-import axios from "axios";
 import { withAuth0 } from '@auth0/auth0-react';
 
 class UpdateFormModal extends Component {
@@ -10,35 +9,6 @@ class UpdateFormModal extends Component {
       checkIn: this.props.checkIn,
       checkOut: this.props.checkOut,
     };
-  }
-
-  updateBook = (e) => {
-    if (e.target.title.value) {
-      this.props.hideModalForm(false);
-    }
-
-    if (this.props.auth0.isAuthenticated) {
-      this.props.auth0.getIdTokenClaims()
-        .then(result => {
-          const jwt = result.__raw;
-          let data = {
-            title: this.state.title,
-            status: this.state.status,
-            description: this.state.description,
-          }
-          let config = {
-            headers: { "Authorization": `Bearer ${jwt}` },
-            method: 'put',
-            baseURL: "http://localhost:8000",
-            url: `/books/${this.props.updateBookId}`,
-            data: data
-          }
-          axios(config).then(res => {
-            console.log('Successfully updated');
-          })
-        })
-        .catch((error) => console.log(error));
-    }
   }
 
   getCheckIn = (e) => {

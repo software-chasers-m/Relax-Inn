@@ -40,12 +40,12 @@ class Cart extends Component {
       checkIn: element.checkIn,
       checkout: element.checkOut,
       totalPrice: price,
-      userData: [],
       show: true
     })
   }
 
   updateUserData = (e) => {
+    e.preventDefault();
     if (e.target.checkIn) {
       this.setState({
         show: false
@@ -77,9 +77,7 @@ class Cart extends Component {
       data: data
     }
     axios(config).then(res => {
-      this.setState({
-        userData: res.data
-      })
+      console.log('updated');
     })
   }
 

@@ -221,11 +221,11 @@ export class App extends Component {
                           <>
                             <div>
                               <LinkContainer to="/Cart">
-                                <FaShoppingCart className="my-2" size={25} />
+                                <Nav.Link><FaShoppingCart size={25} /></Nav.Link>
                               </LinkContainer>
                             </div>
                             <div>
-                              <Badge pill className="me-2" style={{ position: 'relative', top: '-12px' }} bg="secondary">{this.state.userData.length}</Badge>
+                              <Badge pill className="me-2" style={{ position: 'relative', top: '-6px', left: '-5px' }} bg="secondary">{this.state.userData.length}</Badge>
                             </div>
                           </>
                         }

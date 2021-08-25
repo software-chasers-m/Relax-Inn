@@ -9,7 +9,7 @@ ReactDOM.render(
     <Auth0Provider
       domain={process.env.REACT_APP_AUTH0_DOAMIN}
       clientId={process.env.REACT_APP_AUTH0_CLIENTID}
-      redirectUri="https://relax-inn.netlify.app/"
+      redirectUri={window.location.origin}
     >
       <App />
     </Auth0Provider>
